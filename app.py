@@ -74,7 +74,7 @@ def requested():
     phone=[]
     msg = "Need Plasma of your blood group for: "+address
     for i in a:
-        url="https://www.fast2sms.com/dev/bulk?authorization=xCXuwWTzyjOD2ARd1EngbH3a7tKIq5PklJ8YSf0Lh4FQZecs9iNI1dSvuqprxFwCKYJXA5amQkBE36Rl&sender_id=FSTSMS&message="+msg+"&language=english&route=p&numbers="+str(i['phone'])
+        url="https://www.fast2sms.com/dev/bulkV2?authorization=m5LHtqvz9h61FPpUJVseiBW4QYAlDr80jy3bI7uE2wNfgocnaR7Eu9gVrPkU5XjYpdJHa3LoKGWteCT4&sender_id=Cghpet&message="+msg+"&language=english&route=v3&numbers="+str(i['phone'])
         result=requests.request("GET",url)
         print(result)
         phone.append(i['phone'])
